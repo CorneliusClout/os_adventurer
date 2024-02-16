@@ -1,0 +1,18 @@
+Resource,Resource Description,Weight,Energie,Moshiness,Humeur,Prijs,Locatie,Deelbaar_true,Deelbaar,Aantal
+Bier_lowlands,,2,-3,5,3,0,Rij Lowlands,FALSE,,16
+Speed,,"0,1",5,5,-5,0,Rij Lowlands,TRUE,10,1
+Coke,,"0,1",7,3,-2,0,Rij Lowlands,TRUE,5,1
+Ketamine,,"0,1",-5,-5,7,0,Rij Lowlands,TRUE,20,1
+MDMA,,"0,1",2,-2,5,0,Rij Lowlands,TRUE,10,1
+2CB,,"0,1",0,0,0,0,Rij Lowlands,FALSE,,1
+Bier_bar_india_1,,2,-3,5,3,1,Bar India 1,FALSE,,1000
+Bier_bar_india_2,,2,-3,5,3,1,Bar India 2,FALSE,,1000
+Bier_heineken_1,,2,-3,5,3,1,Heineken Bar 1,FALSE,,1000
+Bier_armadillow,,2,-3,5,3,1,Armadillow Zuid,FALSE,,1000
+Bier_Bierlokaal,,2,-4,7,2,2,Bierlokaal,FALSE,,1000
+Bier_chillheuvel_west,,2,-3,5,3,1,Chillheuvel West - bar,FALSE,,1000
+Bier_chillheuvel_oost,,2,-3,5,3,1,Chillheuvel Oost - bar,FALSE,,1000
+Rotdog,,1,1,0,6,1,Armadillow Noord,FALSE,,1000
+Cocktails,,2,2,5,-5,3,Hacienda,FALSE,,1000
+Fruitsapje,,1,-10,-10,-10,2,Fruitsapje,FALSE,,1000
+Worst,,"0,5",3,3,3,2,Worsterij,FALSE,,1000

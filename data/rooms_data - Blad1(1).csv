@@ -1,0 +1,91 @@
+Name,Description,North,South,East,West
+Rij Lowlands,Dit is de rij van Lowlands,Bagagecheck,,,
+Bagagecheck,Dit is de bagagecheck,Plein Bagagecheck,Rij Lowlands,,
+Plein Bagagecheck,Dit is het plein van de bagagecheck. Je kan hier koffie halen.,,Bagagecheck,,Gebied voor brug
+Gebied voor brug,Dit is het gebied voor de brug.,Lowlands Brug,,Plein Bagagecheck,Camping 5 Oost
+Lowlands Brug,Dit is de wijlen Lowlands brug. Geen glooiend heuveltje voor jou.,Na de brug,Gebied voor brug,,
+Camping 5 Oost,Dit is het oostelijke gedeelte van Camping 5.,,,Gebied voor brug,Camping 5 West
+Camping 5 West,Dit is het westelijke gedeelte van Camping 5.,,,Camping 5 Oost,Camping 6 Oost
+Camping 6 Oost,Dit is het oostelijke gedeelte van Camping 6.,,,Camping 5 West,Camping 6 West
+Camping 6 West,Dit is het westelijke gedeelte van Camping 6.,,,,
+Na de brug,Dit is het gebied na de brug. Je hebt het gered. Poe poe nou nou.,Hoofdpad Camping 1,Lowlands Brug,EHBO + Hema,Camping 4 Zuid
+Hoofdpad Camping 1,Dit is het eerste gedeelte van het hoofdpad,Hoofdpad Camping (Peuken - Munten),Na de brug,Kampeergebied voor festivalterrein 1,Camping 4 Noord
+Hoofdpad Camping (Peuken - Munten),Dit is het tweede gedeelte van het hoofdpad. Hier zijn de peuken en munten.,Hoofdpad Camping (Lockers),Hoofdpad Camping 1,Terreiningang Zuid,Camping 3 Zuid
+Hoofdpad Camping (Lockers),Dit is het gedeelte van het hoofdpad met de lockers.,Hoofdpad Camping 2,Hoofdpad Camping (Peuken - Munten),Kampeergebied voor festivalterrein 2,Camping 3 Noord
+EHBO + Hema,Hier is de EHBO en de campingwinkel. Je kan ook hier je pokkie opladen.,Kampeergebied voor festivalterrein 1,,,Na de brug
+Kampeergebied voor festivalterrein 1,Dit is dat rare kampeergebied waar kaolovage mensen zitten voor de bravo.,Terreiningang Zuid,EHBO + Hema,,Hoofdpad Camping 1
+Terreiningang Zuid,Dit is de ingang van het terrein.,Kampeergebied voor festivalterrein 2,Kampeergebied voor festivalterrein 1,Merchandise - Oorbescherming,Hoofdpad Camping (Peuken - Munten)
+Kampeergebied voor festivalterrein 2,Dit is het tweede gedeelte van dat rare kampeergebied.,Kampeergebied voor festivalterrein 3,Terreiningang Zuid,,Hoofdpad Camping (Lockers)
+Camping 4 Zuid,Dit is het zuiden van camping 4.,Camping 4 Noord,,Na de brug,
+Camping 4 Noord,Dit is het noorden van camping 4.,Camping 3 Zuid,Camping 4 Zuid,Hoofdpad Camping 1,
+Camping 3 Zuid,Dit is het zuiden van camping 3.,Camping 3 Noord,Camping 4 Noord,Hoofdpad Camping (Peuken - Munten),
+Camping 3 Noord,Dit is het noorden van camping 3.,Camping 2 Zuid,Camping 3 Zuid,Hoofdpad Camping (Lockers),
+Hoofdpad Camping 2,Dit is het hoofdpad van de camping na de lockers.,Hoofdpad Camping 3,Hoofdpad Camping (Lockers),Kampeergebied voor festivalterrein 3,Camping 2 Zuid
+Hoofdpad Camping 3,Dit is het stuk van het hoofdpad dat bijna bij terreiningang noord is,Hoofdpad Camping 4,Hoofdpad Camping 2,Kampeergebied voor festivalterrein 4,Camping 2 Noord
+Hoofdpad Camping 4,Dit is het gedeelte bij de noordelijke ingang van het terrein.,Hoofdpad Camping 5,Hoofdpad Camping 3,Terreiningang Noord,
+Hoofdpad Camping 5,Je loopt nu voorbij de noordelijke ingang. Waar ga je heen?,,Hoofdpad Camping 4,,Camping 1 Zuid
+Kampeergebied voor festivalterrein 3,Nog meer vaag kampeergebied,Kampeergebied voor festivalterrein 4,Kampeergebied voor festivalterrein 2,,Hoofdpad Camping 2
+Kampeergebied voor festivalterrein 4,En noooooooooogggg meer vaag kampeergebied,Terreiningang Noord,Kampeergebied voor festivalterrein 3,,Hoofdpad Camping 3
+Terreiningang Noord,Dit is het noordelijke terreiningang. Heb je je drugs weggestopt?,,Kampeergebied voor festivalterrein 4,,Hoofdpad Camping 4
+Camping 2 Zuid,Dit is het zuiden van Camping 2,Camping 2 Noord,,Hoofdpad Camping 2,
+Camping 2 Noord,Dit is het noorden van Camping 2,,Camping 2 Zuid,Hoofdpad Camping 3,
+Camping 1 Zuid,Dit is het zuiden van Camping 1,,,,
+Camping 1 Noord,Dit is het noorden van Camping 1,,,,
+Hoofdpad Camping 6,Dit is niemandsland. Je loopt langs de Heineken.,Hoofdpad Camping 7,Hoofdpad Camping 5,,Camping 1 Noord
+Hoofdpad Camping 7,Langzamerhand loop je de brug over. Aan je linkerhand zie je tentjes op de meest onwaarschijnlijke posities.,Hoofdpad Camping 8,Hoofdpad Camping 6,,
+Hoofdpad Camping 8,"Niemand weet wat hier is, behalve boomers.",,Hoofdpad Camping 7,,
+Supermarkt Gllamping,Dit is de supermarkt voor yuppen.,Camper Camping,Hoofdpad Camping 8,Gllamping,Gllamping Deluxe
+Gllamping Deluxe,Dit is de superyuppen camping,,,Supermarkt Gllamping,
+Gllamping,Dit is de yuppencamping,,,,Supermarkt Gllamping
+Camper Camping,Dit is de ouwelullencamping,,Supermarkt Gllamping,,
+Hacienda,Welkom bij de Hacienda. Wil je toevallig slechte muziek en overpriced cocktails?,,Eettentjes - Vleesch,Cape Lowlands,
+Eettentjes - Vleesch,Je kan hier kklekker vlees halen.,Hacienda,Tafelvoetbal,Armadillow Noord - Rotdog,
+Tafelvoetbal,Je loopt langs het tafelvoetbal. Wil je een potje tafelvoetbal spelen? Je kan daar echt milfs mee oppikken.,Eettentjes - Vleesch,Merchandise - Oorbescherming,Armadillow Zuid,
+Merchandise - Oorbescherming,Je bent binnen bij het paradijs. Je realiseert je dat je geen dopjes hebt meegenomen. Wil je afgetroggeld worden? :),Tafelvoetbal,WCs Bravo,Plein Armadillow - Bravo,Terreiningang Zuid
+WCs Bravo,"Dit zijn de WCs van de Bravo. Omdat het nog overdag is, is er nog geen hond",Merchandise - Oorbescherming,Adonis,Bravo Noord,
+Adonis,Dit is de Adonis. Vertel een verhaal over de Adonis,WCs Bravo,,Bravo Zuid,
+Cape Lowlands,Blijkbaar heet dit Cape Lowlands. Maar er is hier niet zoveel te kapen.,Bottleneck Zuid,Armadillow Noord - Rotdog,X-Ray,Hacienda
+Armadillow Noord - Rotdog,Dit is het noorden van de Armadillow. Wil je een Rotdog halen? Y/N,Cape Lowlands,Armadillow Zuid,Bar India 1,Eettentjes - Vleesch
+Armadillow Zuid,Dit is het zuiden van de Armadillow. Wil je een uitsmijter?? Verkopen ze niet meer .:),Armadillow Noord - Rotdog,Plein Armadillow - Bravo,India,Tafelvoetbal
+Plein Armadillow - Bravo,"Dit is het plein tussen de Armadillow, Bravo, en India.",Armadillow Zuid,Bravo Noord,Bar India 2,Merchandise - Oorbescherming
+Bravo Noord,Dit is het noorden van de Bravo. ,Plein Armadillow - Bravo,Bravo Zuid,Vodaphone Paal,WCs Bravo
+Bravo Zuid,Dit is het zuiden van de Bravo. Je komt er niet tussen.,Bravo Noord,,The Block,Adonis
+X-Ray,Dit is de X-Ray,,Bar India 1,,Cape Lowlands
+Bar India 1,Dit is de noordelijke bar van de India,X-Ray,India,,Armadillow Noord - Rotdog
+India,Dit is de India.,Bar India 1,Bar India 2,,Armadillow Zuid
+Bar India 2,Dit is de zuidelijke bar van de India,India,Vodaphone Paal,,Plein Armadillow - Bravo
+Vodaphone Paal,Dit is die vage constructie van Vodaphone waar je op kan klimmen en dood kan gaan.,Bar India 2,The Block,,Bravo Noord
+The Block,"Dit is The Block. Je kan hier overpriced shit halen, of een jonko laten rollen.",Vodaphone Paal,,,Bravo Zuid
+Heineken Bar 1,Dit is de bar van de Heineken,,Heineken,Vegan Kapsalon,
+Heineken,Dit is de Heineken,Heineken Bar 1,Heineken WC,Oesters,
+Heineken WC,Dit is het toilet van de Heineken,Heineken,,Planet Paradise,
+Vegan Kapsalon,Je kan hier vegan kapsa halen. LEKKER HE?!,,Oesters,Vereniging Eigen Tent,Heineken Bar 1
+Oesters,"Pog, oesters halen voor 3,50 per stuk. : )",Vegan Kapsalon,Planet Paradise,Bierlokaal,Heineken
+Planet Paradise,Dit is... Planet Paradise I guess???,Oesters,The School of Life,Worsterij,Heineken WC
+The School of Life,Dit is The School of Life. Wist je dat ik filosofie had gestudeerd?,Planet Paradise,Aziatische Eettentjes,,
+Aziatische Eettentjes,Dit zijn die aziatische tentjes waar je kimchi kan halen,The School of Life,,Bottleneck Zuid,Terreiningang Noord
+Vereniging Eigen Tent,Dit is dat gedeelte van Vereniging Eigen Tent. Wist je dat ik bij mn ouders woon?,,Bierlokaal,Lima,Vegan Kapsalon
+Bierlokaal,Zin in speciaalbier? Dit is het Bierlokaal,Vereniging Eigen Tent,Worsterij,Fruitsapje,Oesters
+Worsterij,Dit is de Worsterij. Of je worst lust,Bierlokaal,Bottleneck Noord,Echo - Merch,Planet Paradise
+Bottleneck Noord,"Dit is de hel, oftewel de Bottleneck van Lowlands (noord).",Worsterij,Bottleneck Zuid,,WCs Bottleneck
+Bottleneck Zuid,"Dit is de hel, oftewel de Bottleneck van Lowlands (zuid).",Bottleneck Noord,Cape Lowlands,Aziatische Eettentjes,Openluchtatelier
+Lima,"Dit is de LIma, oftewel de beste tent van Lowlands",,Fruitsapje,,Llakeside Market West
+Fruitsapje,"Je ziet er brak uit, volgens mij heb je een vruchtensapje nodig.",Lima,Echo - Merch,,
+Echo - Merch,Hier kan je naar de Echo of Merch kopen,Fruitsapje,,Juliet,
+WCs Bottleneck,Dit zijn de vieze WCs bij de bottleneck.,,Openluchtatelier,Bottleneck Noord,
+Openluchtatelier,"Hier is, blijkbaar het openluchtatelier. Ik ben hier nog nooit geweest; maar hadden Os en Tillie hier niet gepaald?",WCs Bottleneck,,Bottleneck Zuid,Lima
+Llakeside Market West,Dit is het westen van de Llakeside Market waar ik die kekke pet heb gekocht.,,,Llakeside Market Oost,Llakeside Market West
+Llakeside Market Oost,Dit is het oosten van de Llakeside Market met die shitty vintage winkeltje en de tattoos.,,,Llowzone,Llowzone
+Llowzone,Kom lekker ontspannen in de  Llowzone : ),,,Here be Dragons 1,Here be Dragons 1
+Here be Dragons 1,"Niemand weet wat hier zit, als je hier chillt dan raak je een beetje die magie kwijt van een eigen wereld.",,Here be Dragons 2,,
+Here be Dragons 2,"Niemand weet wat hier zit, en de mensen die hier chillen hebben een probleem.",Here be Dragons 1,Science Fair,,
+Juliet,Filmpje kijken? Hier is de Juliet.,,,WCs Alpha,Echo - Merch
+WCs Alpha,Dit zijn de WCs van de Alpha,,,Plein Alpha,Juliet
+Plein Alpha,Dit is dat plein van de Alpha met die vlaggen waar je zo lekker in dat kapotte gras kan liggen.,,Alpha Noord,Science Fair,WCs Alpha
+Science Fair,Wetenschap is belangrijk.,Here be Dragons 2,,,Plein Alpha
+Chillheuvel West - toilet,"Dit is het westelijke chillheuvel, hier kan je naar het toilet.",,Chillheuvel West - bar,Alpha Noord,
+Alpha Noord,Dit is het noorden van de Alpha,Plein Alpha,Alpha Zuid,Chillheuvel Oost - toilet,Chillheuvel West - toilet
+Chillheuvel Oost - toilet,"Dit is het oostelijke chillheuvel, hier kan je naar het toilet.",,Chillheuvel Oost - bar,,Alpha Noord
+Chillheuvel West - bar,"Dit is het westelijke chillheuvel, hier kan je bier halen.",Chillheuvel West - toilet,,Alpha Zuid,
+Alpha Zuid,"Dit is het zuiden van de Alpha waar je, als je vroeg bent, platgedrukt worden in het voorvak.",Alpha Noord,,Chillheuvel Oost - bar,Chillheuvel West - bar
+Chillheuvel Oost - bar,"Dit is het oostelijke chillheuvel, hier kan je bier halen.",Chillheuvel Oost - toilet,,,Alpha Zuid
