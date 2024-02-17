@@ -55,7 +55,7 @@ def start_game():
         pass
 
 
-    current_room = rooms[0]
+    current_room = rooms[10]
 
     while True:
             

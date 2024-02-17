@@ -7,7 +7,7 @@ import csv
 
 def load_rooms():
     rooms = []
-    with open('data/rooms_data - Blad1(6).csv') as csv_file:
+    with open('data/rooms_data - Blad1(7).csv') as csv_file:
         csv_file.seek(0)
         csv_reader = csv.DictReader(csv_file, fieldnames=['Name', 
                                                           'Description', 

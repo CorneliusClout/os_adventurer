@@ -21,3 +21,22 @@ def intro_clip():
         pygame.event.poll()
         clock.tick(30)
 
+def heineken_clip():
+    # Instellingen
+    muziek_path = "media/heineken.mp3"
+
+    # Initialiseren van de mixer
+    pygame.mixer.init()
+
+    # Afspelen van de muziek
+    pygame.mixer.music.load(muziek_path)
+    pygame.mixer.music.play()
+
+    # Wachten tot de muziek is afgelopen
+    clock = pygame.time.Clock()
+    while pygame.mixer.music.get_busy():
+        pygame.event.poll()
+        clock.tick(60)
+
+
+

@@ -8,7 +8,7 @@ class Player:
         self.balance = 50
         self.description = "Wat een knappe jongen."
         
-        self.hand = None
+        self.hand = []
         self.inventory_items = []
         self.inventory_edible = []
         self.onderbroek = []
@@ -29,7 +29,7 @@ class Player:
 
     def new_room(self):
         self.moshiness -= 2
-        self.energie -= 2
+        self.energie -= 3
         self.humeur -= 2
 
     #Edibles in Onderbroek
@@ -69,12 +69,22 @@ class Player:
 
         generate_health_bar(self.energie, self.moshiness, self.humeur)
 
+    
+    def add_to_hand(self, edible):
+        if len(self.hand) >= 1:
+            print("Drink eerst het biertje op wat je hebt")
+        
+        else:
+            self.hand.append(edible)
+            print("Dank je wel voor je aankoop! GEKNEUSDE AARDAPPEL!!!!!!!!!!!!!!!!")
+            self.balance -= 1
+
+        
 
     def edible_prompter(self):
         text = '''Wat wil je doen?
 
         * Gebruiken
-        * Verplaatsen (naar onderbroek)
         * Terug (naar het hoofdscherm)'''
 
         prompt = input(text)
@@ -108,7 +118,16 @@ class Player:
                 print("Dat heb je (niet) meer.")
             
         if prompt == 'verplaatsen':
-            pass
+            for item in self.inventory_edible:
+                print("-", item.name)
+            
+            drugs = input("Wat wil je verplaatsen naar je onderbroek?")
+            drug_found = False
+            
+            for drug_checker in self.inventory_edible:
+                print(drug_checker.name)
+                if drug_checker.name.lower() == drugs.lower():
+                    self.stop_in_onderbroek(self, item)
 
         if prompt == 'terug':
             pass

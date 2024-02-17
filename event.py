@@ -1,6 +1,7 @@
 import random
 import time
 import getpass
+from music import heineken_clip
 
 
 #wat te doen: eten, bar, tent start
@@ -28,10 +29,11 @@ class Event:
         self.text = None
         
         #Soort
-        self.bar = bar
+        self.bar = bar #done
         self.toilet = toilet #done
         self.tent = tent #done
         self.stage = stage
+        
         self.eten = eten #overslaan
         self.rij_lowlands = rij_lowlands #done
         self.vibecheck = vibecheck #done
@@ -50,12 +52,9 @@ class Event:
     def choose_event(self, current_room, player):
         if self.bar == True:
             self.event_bar(player)
-                
-        elif self.tent == True and self.location == current_room:
-            self.event_tent()
-        
-        elif self.stage == True and self.location == current_room:
-            self.event_stage()
+                        
+        elif self.stage == True:
+            self.event_stage(player)
         
         elif self.eten == True and self.location == current_room:
             self.event_eten()
@@ -75,6 +74,7 @@ class Event:
 
         if self.tent == True:
             self.event_tent(player)
+            
 
         
         """Runt daadwerkelijk de events, even kijken of sommige dingen 
@@ -89,10 +89,15 @@ class Event:
         for edible in self.edibles_available:
             print(f"- {edible.name}")
 
-        user_input = input("Wat wil je drinken?")
-        
-        if user_input.lower() == edible.name:
-            player.add_to_hand(edible) 
+        while True:
+            bar_input = input("Wat wil je drinken?\n")
+
+            if bar_input == edible.name.lower():
+                player.add_to_hand(edible)
+                break            
+            
+            else:
+                print(f"Dat heb ik niet lol, je input was {bar_input.lower}")
 
 
             
@@ -167,8 +172,142 @@ class Event:
             else: 
                 print("Dat was niet het juiste wachtwoord.")
             
-    def event_stage(self):
-        pass
+    def event_stage(self, player):
+        print("Je bent nu bij self.name == India")
+
+        if self.location.room_name == 'India':
+
+            self.india_event(player)
+
+        if self.location.room_name == 'Heineken':
+            heineken_counter = 0 
+            namen = ['Gruijter', 'Alle', 'Bram', 'Cees', 'Joppe', 'Arnout']
+
+            while heineken_counter < 3:
+                # De gegeven lijst
+
+                # Kies een willekeurig item uit de lijst
+                random_naam = random.choice(namen)
+
+                # Verwijder het gekozen item uit de lijst
+                namen.remove(random_naam)
+
+                # Druk het gekozen item af
+                print(f"Ga moshen met: {random_naam}; pluspunten voor Capoeira dansmoves. 100 punten als je {random_naam} op de grond legt.", )
+                heineken_clip()
+                heineken_counter+=1
+
+        if self.location.room_name == 'Oesters':
+            self.oester_event()
+            
+    def oester_event():
+        # De gegeven lijst
+        oester_counter = 0
+        namen = ['Gruijter', 'Alle', 'Bram', 'Cees', 'Joppe', 'Arnout']
+        oester_dict = {}
+
+        #Welkomstpraatje:
+        print("We gaan oesters proeven. Os die gaat ze een rating geven. Degene die de hoogste rating heeft, krijgt een prijs.")
+
+        while True:
+            
+            go_sign = input("typ go om te gaan\n")
+            if go_sign == 'go':
+                break
+            else:
+                continue
+
+        while oester_counter < 6:
+
+            # Kies een willekeurig item uit de lijst
+            random_naam = random.choice(namen)
+
+            # Verwijder het gekozen item uit de lijst
+            namen.remove(random_naam)
+
+            # Druk het gekozen item af
+            cijfer = input(f"{random_naam}, beschrijf de oester, Osj, je mag daarna het een cijfer geven\n")
+            cijfer = int(cijfer)
+            oester_counter += 1  # Verhoog de teller na elke iteratie van de lus
+            oester_dict[random_naam] = cijfer
+            
+        max_key = max(oester_dict, key=oester_dict.get)
+        print(f"Winnaar van de Osj Oesjter Oesjtravaganza is: {max_key}\n")
+        print("Komt je prijs naar keuze maar halen!")
+
+# Roep de functie aan om het evenement uit te voeren
+
+
+    def india_event(self, player):
+        death_list = [
+            'Arnout (2026) - Overleden door shitty diceroll (Word wakker Arnout)', 
+            'Alle (2032) - Schemes met de Siciliaanse maffia die slecht zijn afgelopen', 
+            'Gruijter (2040) - Schemes met YGO maffia die slecht zijn afgelopen', 
+            'Os (2041) - Asbest', 
+            'Bram (2060) - vermoord door Niels nadat hij durfde in discussie te gaan',
+            'Niels (2060) - Murder-suicide doordat Bram hem triggerde',
+            'Joppe (2104) - Omringd door zijn 4 kinderen, 14 kleinkinderen en 28 achterkleinkinderen viel hij vreedzaam in de eeuwige slaap.',
+            'Cees (?) - Upload zijn bewustzijn naar Classic WOW, sommigen zeggen dat hij nog steeds aan het raiden is.'
+        ]
+
+        correct_order = ['...' for _ in death_list]
+        
+        print("Welkom bij het spel om de juiste volgorde van namen te raden!")
+        print("Je hebt 10 pogingen om de namen in de juiste volgorde te zetten.")
+        print("Gebruik het formaat 'positie: naam' om te raden, bijvoorbeeld '1: Arnout'.")
+        print("Veel succes!\n")
+
+        attempts = 0
+
+        # Spel loop
+        while attempts < 10:
+            # Print de huidige staat van de lijst
+            for i, name in enumerate(correct_order):
+                if name == '...':
+                    print(f"{i + 1}: {name}")
+                else:
+                    print(f"{i + 1}: {death_list[i]}")
+
+            # Vraag de speler om een gok
+            guess = input("\nVoer je gok in (bijvoorbeeld '1: Arnout'): ")
+
+            # Controleer of de gok het juiste formaat heeft
+            parts = guess.split(':', 1)
+            if len(parts) != 2:
+                print("Ongeldig formaat! Gebruik het formaat 'positie: naam'.")
+                continue
+
+            position, name = parts
+            position = int(position.strip()) - 1  # Om te matchen met de index
+
+            # Controleer of de positie binnen het bereik ligt
+            if position < 0 or position >= len(death_list):
+                print("Ongeldige positie! Probeer opnieuw.")
+                continue
+
+            # Haal alleen de naam uit het item in de death_list
+            actual_name = death_list[position].split(" ")[0]
+            
+            # Controleer of de naam correct is
+            if name.strip() == actual_name:
+                print("Goed geraden!")
+                correct_order[position] = death_list[position]
+            else:
+                print("Fout geraden!")
+
+            attempts += 1
+
+            # Controleer of alle namen zijn geraden
+            if correct_order == death_list:
+                print("\nGefeliciteerd! Je hebt alle namen in de juiste volgorde geraden.")
+                return
+
+        # Als het spel eindigt vanwege te veel fouten
+        print("\nHelaas, je hebt te veel fouten gemaakt. Je energie is op.")
+        # Voer hier de code uit om de energie van de speler naar 0 te zetten
+        player.energie = 20
+
+
 
     def event_eten(self):
         pass

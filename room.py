@@ -17,7 +17,6 @@ class Room:
         
         self.visited = False
         self.event = None
-
         self.acsii_art = None
 
     def connect_rooms(self, north=None, south=None, east=None, west=None):

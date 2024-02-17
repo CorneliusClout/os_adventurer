@@ -20,22 +20,20 @@ def Prompt_Input(player, current_room):
             for item in current_room.items:
                 simulate_typing("-", item.name)
     
-    elif action == "take":
-        item_name = input(simulate_typing("Enter item name to take: "))
-        for item in current_room.items:
-            if item.name.lower() == item_name.lower():
-                player.add_to_inventory(item)
-                current_room.remove_item(item)
-                simulate_typing(f"You took the {item.name}.")
-                break
+    elif action == "hand":
+        
+        if player.hand:
+            edible = player.hand[0]
+            player.neem_edible(edible)
+            player.hand = []
+        
         else:
-            simulate_typing("Item not found.")
-    
+            print("Je hebt niks in je handen, zelfs niet je toekomst.")
     elif action == "inventory":
         player.show_inventory()
 
     elif action == "quit":
-        simulate_typing("Thanks for playing!")
+        simulate_typing("Houdoe en de ballen!")
 
     elif action == "event":
         if current_room.event:
@@ -50,8 +48,8 @@ def Prompt_Input(player, current_room):
         if player.moshiness < 70:
             print("Je ziet er goed uit maatje. ;)")
         else:
-            print("Holy shit wat zie je eruit. :( )")
-
+            print("Holy shit wat zie je eruit. :(")
+        return current_room
 
     elif action == "move":
         simulate_typing("Je kan de volgende kanten opgaan:")
